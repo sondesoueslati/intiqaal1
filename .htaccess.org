@@ -1,0 +1,18 @@
+
+RewriteEngine on
+
+RewriteEngine off
+
+RewriteOptions inherit
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php74” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php74 .php .php7 .phtml
+</IfModule>
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^intiqaal\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.intiqaal\.com$
+RewriteRule ^/?$ "https\:\/\/www\.intiqaal\.com\/" [R=301,L]
+
