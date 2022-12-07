@@ -1,5 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home1/intiqaal/public_html/
-    - /bin/cp -r * $DEPLOYPATH
